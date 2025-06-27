@@ -1,5 +1,4 @@
-import torch
-import torch.nn as nn
+#import torch.nn as nn
 from models.cnn14 import Cnn14
 
 SR = 32000
@@ -29,3 +28,5 @@ class PannsChecklist(nn.Module):
         x = x.squeeze(1) if x.dim() == 3 else x
         features = self.backbone.forward(x, None)['embedding']
         return torch.sigmoid(self.classifier(features))
+
+print("✅ Using correct PannsChecklist with forward()")
