@@ -30,3 +30,4 @@ class PannsChecklist(nn.Module):
         return torch.sigmoid(self.classifier(features))
 
 print("✅ Using correct PannsChecklist with forward()")
+# force redeploy
