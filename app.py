@@ -24,7 +24,7 @@ if not os.getenv("OPENAI_API_KEY"):
 
 # ────────── CONSTANTS ──────────
 STAGE1_PTH = Path("models/stage1_engine_detector.pth")
-STAGE2_PTH = Path("models/best_panns_multilabel_cnn14.pth")
+STAGE2_PTH = Path("models/panns_cnn14_checklist_best_aug.pth")
 SEARCH_MODULES = ["stage1_model", "pannsupgraded_model", "pannsupgraded"]
 CLASS_STAGE1, CLASS_STAGE2 = "Stage1EngineDetector", "PannsChecklist"
 
